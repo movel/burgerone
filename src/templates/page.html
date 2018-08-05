@@ -5,23 +5,130 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
+	<!-- begin header -->
+	<div class="header">
+		<div class="header__container">
+			<h1 class="header__logo">
+				<span class="logo__part1">BURGERS</span><span class="logo__part2">.CO</span>	
+			</h1>	
+			<div class="header__nav">
+				<a href="#">Home</a>
+				<a href="#">Our Burgers</a>
+				<a href="#">What Else?</a>
+				<a href="#">Photos</a>
+				<a href="#">Contacts</a>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
 
+	<!-- begin hero -->
+	<div class="hero">
+		<div class="hero__backg1">
+			<h1 class="hero__title1">We create Burgers.</h1>
+			<p class="hero__text1">Beautiful hand crafted burgers with tangy sauce lettuce, onions</p>
+		</div>
+		<div class="hero__backg2">
+			<h1 class="hero__title2">
+				Delicious.
+			</h1>
+			<p class="hero__text2">
+				Oh yes, they are as they are made with hands and our chef loves
+			</p>
+			<p class="hero__text2">
+				Are they really ?
+			</p>
+			<button class="showme">Show me</button>
+		</div>
+	</div>
+	<!-- end hero -->
+
+	<!-- begin burgers -->
+	<div class="burgers">
+		<div class="container">
+			<h1 class="price">
+				<div class="price__img">
+					<img src="" alt="">
+				</div>
+				<h2 class="price__title">Beef Bondy</h2>
+				<p class="price__text">Juicy hand cut beef with Mango sauce fries.</p>
+				<button class="price__button"></button>
+			</div>
+		</div>
+	</div>
+	<!-- end burgers -->
+
+	<!-- begin whatelse -->
+	<div class="whatelse">
+		<div class="whatelse__backg">
+			<h1 class="whatelse__title">Wait ! But we<br> also serve...</h1>
+			<div class="whatelse__table">
+				<table></table>
+			</div>
+		</div>
+	</div>
+	<!-- end whatelse -->
+
+	<!-- begin photos -->
+	<div class="photos">
+		<h1 class="block__title">Photos</h1>
+		<p class="block__text">Beautiful pictues clicked by our Customers</p>
+		<div class="container">
+			<div class="photos__top">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+			<div class="photos__bottom">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- end photos -->
+
+	<!-- begin contacts -->
+	<div class="contacts">
+		<h1 class="block__title">Contact Us</h1>
+		<p class="block__text">Beautiful pictues clicked by our Customers</p>
+		<div class="contacts__wrap">
+			<div class="container">
+				<div class="contacts__touchus">
+					<div class="touchus__title">Fill this form to get in touch with us.</div>
+					<div class="touchus__form">
+						<form method="post" id="usrform">
+							<input type="text" placeholder="Write your full name here">
+							<input type="email" placeholder="Email Address here">
+							<input type="tel" placeholder="Phone Number">
+							<textarea type="text" form="usrform" placeholder="Message you want to deliver....."></textarea>
+							<input type="submit" value="Submit Now">
+						</form>
+					</div>
+				</div>
+				<div class="contacts__local">
+					<div id="map"></div>
+					<div class="local__address">272 Collin Street, Melbourne 3000</div>
+					<div class="local__call">Call  | </div>
+					<div class="local__phone">09005896</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contacts -->
 	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	<!-- begin footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="copywrite">All RIghts Reserved - 2016 DesignCoon</div>
+			<div>
+				<a href="https://www.sellfy.com/designcoon" class="site" target="_blank">www.sellfy.com/designcoon</a>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
 
 {% endblock %}
