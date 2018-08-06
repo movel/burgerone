@@ -8,16 +8,20 @@
     &__backg1, &__backg2
         height: 395px
         opacity: 0.92
+        position: relative
     &__backg1
         background-color: #011627
     &__backg2
         background-color: #ff9f1c
     &__wrap1, &__wrap2
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
         width: 422px
     &__wrap1
-        float: right
+        right: 0
     &__wrap2
-        float: left
+        left: 0
     &__title1, &__title2
         font-size: 65px
         font-family: "Rubik"
@@ -26,6 +30,7 @@
         color: #ffa326
     &__title2
         color: #ffffff
+        margin-left: 17%
     &__text1, &__text2
         display: block
         font-size: 14px
@@ -35,4 +40,5 @@
         color: #ffffff
     &__text2
         color: #0d1e2d
+        margin-left: 17%
         
