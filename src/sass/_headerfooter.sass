@@ -1,0 +1,43 @@
+.header
+    margin: 50px auto
+    +clr
+    &__container
+        width: 845px
+        margin: 0 auto
+        position: relative
+    &__logo
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        cursor: pointer
+        text-decoration: none
+        font-size: 26px
+        font-family: "Martel"
+        line-height: 0.669
+    &__logo:hover
+        font-weight: bold
+    &__nav
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        margin-top: -7px
+        a 
+            text-decoration: none
+            padding: 5px 0
+            border-bottom: 3px solid #ffffff
+            font-size: 16px
+            font-family: "Martel"
+            color: #0e1d2b
+            line-height: 1.087
+            margin-left: 15px
+        a:hover 
+            font-weight: bold
+            border-bottom: 3px solid #ffa326
+
+.logo
+    &__part1
+        color: #0e1d2b
+    &__part2
+        color: #ffa326
