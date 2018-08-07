@@ -1,4 +1,6 @@
 .hero
+    margin-bottom: 50px
+    +clr
     &__part1, &__part2
         background-position: 100% 100%
         background-size: cover
@@ -13,7 +15,7 @@
         background-color: #011627
     &__backg2
         background-color: #ff9f1c
-    &__wrap1, &__wrap2
+    &__wrap1, &__wrap2 
         position: absolute
         top: 50%
         transform: translateY(-50%)
@@ -36,9 +38,21 @@
         font-size: 14px
         font-family: "Martel"
         line-height: 1.429
+        padding: 10px 0
     &__text1
         color: #ffffff
     &__text2
         color: #0d1e2d
         margin-left: 17%
         
+.showme
+    margin-left: 10px
+    height: 38px
+    width: 160px
+    background-color: #ffffff
+    font-size: 16px
+    font-family: "Martel"
+    color: #0d1e2d
+    line-height: 1.125
+    font-weight: bold
+    box-shadow: 10px 5px 5px #3e3e3e
