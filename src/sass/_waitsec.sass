@@ -1,38 +1,35 @@
-.whatelse
-    max-width: 100%
+.waitsec
     background-position: 50% 50%
     background-repeat: no-repeat
     background-size: cover
     +clr
     &__backg
-        height: 404px
         opacity: 0.92
         background: linear-gradient(#0b1d2c, #ff9f1c)
+    &__wrap 
+        height: 404px
         position: relative
-    .container 
+    &__title, &__table
         position: absolute
         top: 50%
         transform: translateY(-50%)
-        left: 0
-        right: 0
-        +clr
     &__title
-        width: 60%
-        float: left
         font-size: 60px
         font-family: "Rubik"
         color: #ffffff
         line-height: 1
         text-align: center
     &__table
-        width: 40%
-        float: right
+        right: 0
+        border: 3px solid #ff9f1c
+        padding: 30px 
         table
-            border: 3px solid #ff9f1c
-            td
-                font-size: 16px
-                font-family: "Martel"
-                color: #ffffff
-                line-height: 0.979
-                text-align: left
-                padding: 7px
+            tr 
+                padding: 25px
+                td
+                    font-size: 16px
+                    font-family: "Martel"
+                    color: #ffffff
+                    line-height: 0.979
+                    text-align: left
+                    padding: 7px
