@@ -1,4 +1,23 @@
 .photos
     img 
-        width: 100%
-        
+        max-width: 100%
+        transform: scale(1.01)
+    img:hover
+        transform: scale(1.05)
+    a
+        cursor: pointer
+    +clr
+    &__top, &__bottom
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+    &__topimg
+        width: 33.333333333333333333333333333333%
+        float: left
+        img                   
+            height: 184px
+    &__bottomimg         
+        width: 16.666666666666666666666666666667%
+        float: left
+        img                   
+            height: 92px    
