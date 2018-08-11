@@ -1,6 +1,8 @@
 .header
     margin: 50px auto
     +clr
+    +r(620)
+        margin: 15px auto
     &__container
         width: 845px
         margin: 0 auto
@@ -15,6 +17,16 @@
         font-size: 26px
         font-family: "Martel"
         line-height: 0.669
+        +r(620)
+            display: block
+            position: relative
+            line-height: 1.4
+            text-align: center
+            width: 100%
+            float: left
+            top: 0
+            transform: translateY(0)
+            +clr
     &__logo:hover
         font-weight: bold
     &__nav
@@ -32,9 +44,22 @@
             color: #0e1d2b
             line-height: 1.087
             margin-left: 15px
+            +r(620)
+                position: relative
+                line-height: 1.4
+                display: block
+                width: 100%
         a:hover 
             font-weight: bold
             border-bottom: 3px solid #ffa326
+        +r(620)
+            position: relative
+            float: left
+            top: 0
+            left: 0
+            width: 100%
+            transform: translateY(0)
+            +clr
 
 .logo
     &__part1
