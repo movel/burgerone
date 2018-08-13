@@ -4,7 +4,7 @@
     +r(620)
         margin: 15px auto
     &__container
-        width: 845px
+        max-width: 845px
         margin: 0 auto
         position: relative
     &__logo
@@ -18,13 +18,12 @@
         font-family: "Martel"
         line-height: 0.669
         +r(620)
+            position: static
             display: block
-            position: relative
+            clear: left
+            margin: 0 auto
             line-height: 1.4
-            text-align: center
             width: 100%
-            float: left
-            top: 0
             transform: translateY(0)
             +clr
     &__logo:hover
@@ -32,9 +31,11 @@
     &__nav
         position: absolute
         top: 50%
+        float: right
         right: 0
         transform: translateY(-50%)
         margin-top: -7px
+        +clr
         a 
             text-decoration: none
             padding: 5px 0
@@ -44,28 +45,40 @@
             color: #0e1d2b
             line-height: 1.087
             margin-left: 15px
+            float: left
             +r(620)
                 position: relative
                 line-height: 1.4
                 display: block
                 width: 100%
+                float: none
+                margin: 0
+                font-size: 20px
         a:hover 
             font-weight: bold
             border-bottom: 3px solid #ffa326
+            +r(620)
+                color: #ffffff
+                background-color: #ffa326
         +r(620)
             position: relative
-            float: left
-            top: 0
-            left: 0
             width: 100%
+            clear: right
+            text-align: center
             transform: translateY(0)
+            left: -50%
+            transform: translateX(50%)
             +clr
 
 .logo
     &__part1
         color: #0e1d2b
+        +r(620)
+            display: inline-block
     &__part2
         color: #ffa326
+        +r(620)
+            display: inline-block
 
 .footer
     background-color: #050b10
