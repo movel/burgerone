@@ -6,14 +6,20 @@
         margin: 0 auto
         padding: 30px 0
         +clr
+        +r(620)
+            margin: 0 10px
     &__touchus
         width: 35.586206896551724137931034482759%
         float: left
         +clr
+        +r(620)
+            width: 100%
     &__local
         width: 43.862068965517241379310344827586%
         float: right
         +clr
+        +r(620)
+            width: 100%
 
 .touchus__title
     font-size: 12.18px
@@ -29,6 +35,8 @@
     input, textarea
         width: 100%
         height: 30px
+        +r(620)
+            margin: 10px auto
     textarea 
         height: 90px
         margin-top: 20px
@@ -40,6 +48,7 @@
         font-weight: bold
         line-height: 0.979
         text-align: center
+    
 
 .local
     &__address, &__call, &__phone
@@ -59,6 +68,16 @@
         color: #ffa326
         font-weight: bold
         text-decoration: none
+        +r(620)
+            font-size: 42px
+    +r(620)
+        float: left
+
+#map 
+    max-width: 100%
+    float: left
+    img 
+        width: 100%
 
 form, input 
     margin: 0

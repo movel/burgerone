@@ -9,6 +9,7 @@
         float: left
         +r(620)
             width: 100%
+            float: none
     &__backg1, &__backg2
         height: 395px
         opacity: 0.92
@@ -21,7 +22,9 @@
         position: absolute
         top: 50%
         transform: translateY(-50%)
-        width: 422px
+        max-width: 422px
+        +r(620)
+            width: 100%
     &__wrap1
         right: 0
     &__wrap2
@@ -30,22 +33,35 @@
         font-size: 65px
         font-family: "Rubik"
         line-height: 0.923
+        +r(620)
+            font-size: 50px
+            width: 100%
+            margin: 0 10px
     &__title1
         color: #ffa326
     &__title2
         color: #ffffff
         margin-left: 17%
+        +r(620)
+            margin-left: 0
+            margin: 0 10px
     &__text1, &__text2
         display: block
         font-size: 14px
         font-family: "Martel"
         line-height: 1.429
         padding: 10px 0
+        +r(620)
+            font-size: 16px
+            margin: 0 10px
     &__text1
         color: #ffffff
     &__text2
         color: #0d1e2d
         margin-left: 17%
+        +r(620)
+            margin-left: 0
+            margin: 0 10px
         
 .showme
     margin-left: 10px

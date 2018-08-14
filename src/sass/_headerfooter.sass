@@ -21,8 +21,9 @@
             position: static
             display: block
             clear: left
-            margin: 0 auto
+            margin: 10px auto
             line-height: 1.4
+            text-align: center
             width: 100%
             transform: translateY(0)
             +clr
@@ -54,7 +55,7 @@
                 float: none
                 margin: 0
                 font-size: 20px
-        a:hover 
+        a:hover
             font-weight: bold
             border-bottom: 3px solid #ffa326
             +r(620)
@@ -73,12 +74,8 @@
 .logo
     &__part1
         color: #0e1d2b
-        +r(620)
-            display: inline-block
     &__part2
         color: #ffa326
-        +r(620)
-            display: inline-block
 
 .footer
     background-color: #050b10
@@ -96,3 +93,5 @@
 
 .site
     float: right
+    +r(620)
+        float: left
